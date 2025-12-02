@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.invite</groupId>
-	<artifactId>demo</artifactId>
+	<artifactId>sp-hello</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>demo</name>
+	<name>sp-hello</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -90,6 +90,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		<finalName>sp-hello</finalName>
 	</build>
 
 </project>
