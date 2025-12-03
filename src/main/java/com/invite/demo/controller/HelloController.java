@@ -21,4 +21,18 @@ public class HelloController {
             </html>
             """;
     }
+    @GetMapping("/welcome2")
+    public String getWelcomePage2() {
+        return """
+            <!DOCTYPE html>
+            <html>
+            <head><title>Welcome</title></head>
+            <body style="font-family: Arial; padding: 40px; text-align: center;">
+                <h1 style="color: #4CAF50;">🎉 Welcome to the AWS Cloud - Deployment using Codepipeline  !</h1>
+                <p style="font-size: 18px;">Application is running successfully.</p>
+                <p><a href="/api/health" style="color: #2196F3;">Check Health Status</a></p>
+            </body>
+            </html>
+            """;
+    }
 }
