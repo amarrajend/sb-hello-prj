@@ -1,5 +1,6 @@
 # Dockerfile for Spring Boot Application
-FROM eclipse-temurin:21-jre-alpine
+#FROM eclipse-temurin:21-jre-alpine
+FROM public.ecr.aws/amazoncorretto/amazoncorretto:21-al2023-jdk
 
 # Set working directory
 WORKDIR /app
