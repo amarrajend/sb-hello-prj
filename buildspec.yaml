@@ -3,17 +3,11 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      java: corretto21  # This sets Java 21 at the environment level
+      java: corretto21  # This ensures Java 21 environment
   pre_build:
     commands:
-      # Check current Java version
-      - echo "Java version in environment:"
-      - java -version
-      # Set Java 21 using update-alternatives (persists for session)
-      - update-alternatives --set java /usr/lib/jvm/java-21-amazon-corretto/bin/java
-      - update-alternatives --set javac /usr/lib/jvm/java-21-amazon-corretto/bin/javac
-      # Verify Java 21 is set
-      - echo "Java version after setting alternatives:"
+      # Verify Java version
+      - echo "Java version:"
       - java -version
       # Build with Maven
       - mvn clean install
