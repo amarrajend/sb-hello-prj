@@ -10,4 +10,9 @@ public class HelloController {
     public String index() {
         return "Used to test Cloud Deployments";
     }
+
+    @RequestMapping("/health")
+    public String healthCheck() {
+        return "I am doing good!";
+    }
 }
